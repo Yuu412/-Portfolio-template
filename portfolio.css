@@ -1,0 +1,535 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/*====スクロールごとに表示部=======================================*/
+/*================================================================*/
+.fadein {
+  opacity: 0;
+  transform: translate(0, 200px);
+  transition: all 1s;
+}
+
+.fadein.active {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/*=======ヘッダ部分================================================*/
+/*================================================================*/
+.site-header {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  transition: .5s;
+  width: 100%;
+  z-index: 999;
+}
+
+.site-header.hide {
+  transform: translateY(-100%);
+}
+
+.site-logo img {
+  max-height: 60px;
+  margin: 10px 30px 0 0;
+}
+
+.botton-header{
+  position: absolute;
+  width: 50%;
+  margin-top: -50px;
+  right: 0;
+}
+nav ul {
+  display: table;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  text-align: center;
+}
+
+nav li {
+  display: table-cell;
+  min-width: 50px;
+
+}
+
+nav a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #555;
+  padding-bottom: 5px;
+
+}
+
+nav li.current {
+  border-bottom: 3px solid #92D050;
+}
+
+nav li:hover {
+  color: #E7DA66;
+  border-bottom: 3px solid #1e90ff;
+border-radius: 3px;
+}
+
+/*=======サイトトップ部分==========================================*/
+/*================================================================*/
+#site-top {
+  position: relative;
+  text-align: center;
+  height: 800px;
+  background: linear-gradient(-90deg, #00ced1, #1e90ff);
+}
+
+.dot-top {
+  position: absolute;
+  margin-top: -800px;
+  width: 100%;
+  height: 800px;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.36) 4%, transparent 7%);
+  background-position: 0 0, 30px 30px;
+  background-size: 38px 38px;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.title-top {
+  font-family: "Nixie One";
+  font-size: 800%;
+  font-weight: 700;
+  text-align: left;
+  position: absolute;
+  color: #FFF;
+  width: 40%;
+  top: 200px;
+  left: 30%;
+}
+
+
+
+.subtitle {
+  font-family: "Nixie One";
+  position: absolute;
+  text-align: left;
+  color: #fff;
+  width: 40%;
+  height: 50px;
+  top: 550px;
+  left: 55%;
+  font-size: 150%;
+  font-weight: 500;
+}
+
+/*=======プロフィール部分==========================================*/
+#profile-link{
+  position: absolute;
+  margin-top:-50px;
+}
+/*================================================================*/
+#profile {
+  height: 700px;
+  background-color: #FFFFFF;
+}
+
+.profile-block {
+  z-index: 10000;
+  text-align: center;
+  position: absolute;
+  background-color: #EEEEEE;
+  height: 700px;
+  width: 70%;
+  margin: -100px 15% 0 15%;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+
+}
+
+.V-space2 {
+  height: 50px;
+}
+
+.title-profile {
+  font-size: 250%;
+}
+.title-profile{
+	background-image: linear-gradient(to right, #185a9d, #43cea2);
+	background-repeat: no-repeat;
+	background-size: 20% 20%;
+	background-position: bottom;
+}
+
+.img-profile {
+  text-align: left;
+  margin: 50px 0 0 50px;
+}
+
+.img-profile img {
+  max-width: 350px;
+}
+
+.profile-box {
+  width: 45%;
+  margin-left: 500px;
+  margin-top: -500px;
+}
+
+.name {
+  font-size: 180%;
+  margin-bottom: 50px;
+}
+
+.text-profile {
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.plus-profile {
+  text-align: left;
+}
+
+.plus-profile img{
+  max-width: 30px;
+  margin-top: 20px;
+}
+
+
+.sns-botton {
+  width: 30px;
+  height: 30px;
+  margin: 50px 30px 0 30px;
+  display: inline-block;
+}
+
+.text-plus{
+  position: absolute;
+  margin: -40px 0 10px 60px;
+}
+
+.dot-profile {
+  position: absolute;
+  z-index: 10;
+  height: 300px;
+  width: 280%;
+  margin-top: 120px;
+  margin-left: -100px;
+  background-image: radial-gradient(rgba(205, 000, 005, 0.36) 4%, transparent 7%);
+  background-position: 0 0, 30px 30px;
+  background-size: 38px 38px;
+}
+
+/*=======受けられる仕事============================================*/
+#service-link{
+  position: absolute;
+  margin-top:-150px;
+}
+/*================================================================*/
+#service {
+  text-align: center;
+  height: 800px;
+  background-color: rgba(26, 69, 97, 0.85);
+}
+
+.V-space3 {
+  height: 100px;
+}
+
+.title-service {
+  font-size: 250%;
+  color: #FFFFFF;
+}
+.title-service{
+	background-image: linear-gradient(to right, #185a9d, #43cea2);
+	background-repeat: no-repeat;
+	background-size: 10% 20%;
+	background-position: bottom;
+}
+
+.dot-service {
+  position: absolute;
+  margin-top: -200px;
+  width: 100%;
+  height: 800px;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.20) 4%, transparent 7%);
+  background-position: 0 0, 30px 30px;
+  background-size: 38px 38px;
+}
+
+.work-box {
+  display: inline-block;
+  background-color: #FFF;
+  width: 30%;
+  margin: 50px 5px 0 5px;
+  height: 400px;
+}
+
+.work-box svg {
+  position: absolute;
+  margin-left: -3%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+
+.subtitle-service {
+  font-size: 150%;
+  height: 50px;
+  width: 90%;
+  margin: 120px 5% 0 5%;
+}
+.subtitle-service{
+  background-image: linear-gradient(to right, #185a9d, #43cea2);
+  background-repeat: no-repeat;
+  background-size: 80% 10%;
+  background-position: bottom;
+}
+
+.text-service {
+  position: absolute;
+  width: 20%;
+  margin: 5px 5% 0 5%;
+  height: 210px;
+}
+
+/*=======作品仕事============================================*/
+#product-link{
+  position: absolute;
+  margin-top:-150px;
+}
+/*================================================================*/
+#product {
+  text-align: center;
+  height: 800px;
+  background-color: #DDDDDD;
+}
+
+.V-space4 {
+  height: 80px;
+}
+
+.title-product {
+  font-size: 250%;
+}
+.title-product{
+	background-image: linear-gradient(to right, #185a9d, #43cea2);
+	background-repeat: no-repeat;
+	background-size: 20% 20%;
+	background-position: bottom;
+}
+
+.check-box {
+  z-index: 500;
+  position: absolute;
+  background-color: #FFFFFF;
+  height: 800px;
+  width: 80%;
+  margin: 100px 10% 0px 10%;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+}
+
+/*========タブ切り替え==========================================================*/
+/*===========================================================================*/
+.tab4{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color:#fff !important;
+  margin:50px 0 0 10%  !important;
+  width: 80%;
+  list-style: none;
+}
+.tab4__item{
+  flex:1;
+}
+.tab4__link{
+  position:relative;
+  display: block;
+  text-decoration: none;
+  color: #444;
+  cursor:pointer;
+}
+.tab4__link:before{
+  content:"";
+  position:absolute;
+  bottom:0;
+  right:50%;
+  width:0;
+  height:2px;
+  background-color:#444;
+  transition:all 0.4s ease-out;
+}
+.tab4__link:after{
+  content:"";
+  position:absolute;
+  bottom:0;
+  left:50%;
+  width:0;
+  height:2px;
+  background-color:#444;
+  transition:all 0.4s ease-out;
+}
+.tab4__link.on:before{
+  width:50%;
+}
+.tab4__link.on:after{
+  width:50%;
+}
+.tab4-body{
+  position:relative;
+  height:120px;
+}
+.tab4-body__item{
+  position:absolute;
+  width:100%;
+  margin: 30px 15px;
+  text-align:center;
+  opacity:0;
+  transition:all 0.6s ease-out;
+}
+.tab4-body__item.on{
+  opacity:1;
+}
+
+/*===========================================================================*/
+
+.product-box{
+  z-index: 400;
+  width: 90%;
+  height: 500px;
+  margin: 0 5% 0 5%;
+}
+.each-product-box{
+  z-index: 4000;
+  display: inline-block;
+  width:30%;
+  height: 200px;
+  margin: 20px 0 0 20px;
+  background-color: #EEEEEE;
+}
+.dot-product {
+  position: absolute;
+  margin-top: -200px;
+  width: 100%;
+  height: 200px;
+  background-image: radial-gradient(rgba(115, 155, 255, 0.90) 4%, transparent 7%);
+  background-position: 0 0, 30px 30px;
+  background-size: 38px 38px;
+}
+
+/*=======コンタクト部分==========================================*/
+#contact-link{
+  position: absolute;
+  margin-top:0px;
+}
+/*==============================================================*/
+#contact {
+  z-index: 40;
+  text-align: center;
+  height: 1600px;
+  margin-top: 200px;
+  margin-bottom: 400px;
+  background-color: #FFFFFF;
+}
+
+.title-contact {
+  font-size: 250%;
+}
+.title-contact{
+	background-image: linear-gradient(to right, #185a9d, #43cea2);
+	background-repeat: no-repeat;
+	background-size: 10% 20%;
+	background-position: bottom;
+}
+
+.contact-menu {}
+
+.menu-box {
+  display: inline-block;
+  background-color: #FFF;
+  width: 30%;
+  margin: 50px 5px 0 5px;
+  height: 200px;
+}
+
+.text-menu-box {
+  background-color: #FFF;
+  text-decoration: none;
+  font-size: 120%;
+  width: 90%;
+  height: 150px;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.text-menu-box a{
+  color: #1e90ff;
+}
+
+.contact-form {
+  text-align: center;
+  z-index: 120;
+  position: absolute;
+  height: 500px;
+  margin: 100px 15% 0 15%;
+  width: 70%;
+}
+.contact-form img{
+  width: 50%;
+}
+
+.title-contact-form{
+  font-size: 250%;
+}
+.text-contact-form{
+  margin: 50px 0 50px 0;
+}
+.dot-contact-top {
+  z-index: 1;
+  position: absolute;
+  margin-top: 00px;
+  width: 100%;
+  height: 100px;
+  background-image: radial-gradient(rgba(115, 155, 255, 0.90) 4%, transparent 7%);
+  background-position: 0 0, 30px 30px;
+  background-size: 38px 38px;
+}
+.dot-contact {
+  position: absolute;
+  z-index: 10;
+  height: 250px;
+  width: 280%;
+  margin-top: 350px;
+  margin-left: -100px;
+  background-image: radial-gradient(rgba(64, 224, 208, 0.77) 4%, transparent 7%);
+  background-position: 0 0, 30px 30px;
+  background-size: 38px 38px;
+}
+
+/*=======フッター部分==========================================*/
+/*==============================================================*/
+.footer {
+  background-color: #333333;
+  width: 120%;
+  height: 300px;
+  margin: 0 0 -10px -10px;
+}
+
+.footer-box {
+  text-align: center;
+  width: 80%;
+  height: 100px;
+  margin: 0 0 0 2%;
+}
+
+.footer-box svg {
+  margin-top: 50px;
+  margin-left: 20px;
+  display: inline-block;
+}

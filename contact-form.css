@@ -1,0 +1,81 @@
+.message{
+  position: absolute;
+  width: 80%;
+  height: 200px;
+  margin-left:10%;
+  z-index: 1000000;
+  font-size: 150%;
+  color: red;
+}
+
+ul{
+    margin-left: 0px;
+}
+.inputForm{
+  margin-left: 5%;
+  height: 800px;
+  background-color: #FFFFFF;
+}
+
+form{
+    text-align: left;
+}
+
+.form li{
+    height: 50px;
+    padding: 25px 0 0 0px;
+    margin: 0 0 0 0;
+    font-size: 150%;
+}
+
+li{
+  list-style: none;
+  display: inline-block;
+
+}
+
+.text-need{
+  margin-left: 0px;
+  font-size: 120%;
+  color: #ff4500;
+}
+
+.input-name{
+  width: 80%;
+  margin: 0px 0 30px 0;
+  font-size: 120%;
+}
+
+.input-mail{
+
+  width: 80%;
+  height: 20px;
+  margin-top: 0;
+  margin: 0px 0 30px 0px;
+}
+.input-title {
+  width: 80%;
+  height: 30px;
+  margin: 0px 0 30px 0px;
+}
+.input-content {
+  position: absolute;
+  height: 160px;
+  width: 80%;
+  margin: 0px 0 30px 0px;
+}
+
+
+
+.indent-post{
+  position: absolute;
+  margin: 25px 0 0 20px;
+  font-size: 120%;
+}
+
+#orderBotton input{
+  position: absolute;
+  margin: 200px 0 0 0;
+  width: 80%;
+  height: 50px;
+}
